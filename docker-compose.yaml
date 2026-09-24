@@ -1,0 +1,15 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: fastfood-pedidos-db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: fastfood_pedidos
+      MYSQL_ROOT_HOST: '%'
+    ports:
+      - "3306:3306"
+    volumes:
+      - fastfood_pedidos_db_data:/var/lib/mysql
+
+volumes:
+  fastfood_pedidos_db_data:
