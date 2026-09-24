@@ -7,7 +7,7 @@ services:
       MYSQL_DATABASE: fastfood_pedidos
       MYSQL_ROOT_HOST: '%'
     ports:
-      - "3306:3306"
+      - "3307:3306"
     volumes:
       - fastfood_pedidos_db_data:/var/lib/mysql
 
